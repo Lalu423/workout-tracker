@@ -22,7 +22,7 @@ const workout = async function logJSONData() {
     //         "Content-Type": 'application/json'
     //     },
     //     body: JSON.stringify({
-    //         username: "lalu989", password: "Lionheart515"
+    //         username: "lalu989", password: ""
     //     })
     // })
   const jsonData = await response.json();
@@ -30,6 +30,8 @@ const workout = async function logJSONData() {
 
   return jsonData;
 }
+
+
 
 
 
