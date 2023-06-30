@@ -1,6 +1,3 @@
-
-
-
 const workout = async function logJSONData() { 
 
 //     curl \
@@ -12,7 +9,7 @@ const workout = async function logJSONData() {
 // curl -X GET https://wger.de/api/v2/workout/ \
 //      -H 'Authorization: Token 56c76d8178d0eee843d444734daf71278e39d1ab'
 
-  const response = await fetch("https://wger.de/api/v2/workout/", {
+  const response = await fetch("https://wger.de/api/v2/exercise", {
     method: "GET",
     headers: {Authorization: "Token 56c76d8178d0eee843d444734daf71278e39d1ab"}
 });
@@ -22,7 +19,7 @@ const workout = async function logJSONData() {
     //         "Content-Type": 'application/json'
     //     },
     //     body: JSON.stringify({
-    //         username: "lalu989", password: ""
+    //         username: "lalu989", password: "Lionheart515!"
     //     })
     // })
   const jsonData = await response.json();
@@ -35,4 +32,4 @@ const workout = async function logJSONData() {
 
 
 
-module.exports = {workout}
+module.exports = { workout }

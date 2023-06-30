@@ -1,0 +1,523 @@
+{
+    "count": 1250,
+    "next": "https://wger.de/api/v2/exercise/?limit=20&offset=20",
+    "previous": null,
+    "results": [
+        {
+            "id": 345,
+            "uuid": "c788d643-150a-4ac7-97ef-84643c6419bf",
+            "name": "2 Handed Kettlebell Swing",
+            "exercise_base": 9,
+            "description": "<p>Two Handed Russian Style Kettlebell swing</p>",
+            "creation_date": "2015-08-03",
+            "category": 10,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                10
+            ],
+            "language": 2,
+            "license": 2,
+            "license_author": "deusinvictus",
+            "variations": [
+                345,
+                249
+            ],
+            "author_history": [
+                "deusinvictus"
+            ]
+        },
+        {
+            "id": 2078,
+            "uuid": "bece2c5e-aadc-4d20-bde2-64b5b53f53f0",
+            "name": "3D lunge warmup",
+            "exercise_base": 1115,
+            "description": "As a warmup, use light dumbbells, one in each hand. Lunge in alternating directions, forward, sideways, backwards and 45 degree angles.",
+            "creation_date": "2023-05-12",
+            "category": 15,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                3
+            ],
+            "language": 2,
+            "license": 2,
+            "license_author": "philip",
+            "variations": [],
+            "author_history": [
+                "philip"
+            ]
+        },
+        {
+            "id": 1731,
+            "uuid": "66fe654d-3379-46e8-95dc-23e3ce56f25c",
+            "name": "4-count burpees",
+            "exercise_base": 997,
+            "description": "<p>Starting position:</p><p>Stand straight, feet hip-width apart.</p><p>Steps:</p><ol><li>Squat low and support yourself on the floor with your hands between the knees and in front of your feet, your back straight.</li><li>Keeping your hands on the floor, jump your legs backward into high plank position.</li><li>Jump your feet forward to return to the squat position.</li><li>Repeat.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 11,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 2,
+            "license": 2,
+            "license_author": "Miroslav Mazel (imported from Feeel)",
+            "variations": [],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "Miroslav Mazel (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1728,
+            "uuid": "ac741b46-6d5f-4f33-89b3-7930fa9bac6a",
+            "name": "4-Hitung burpe",
+            "exercise_base": 997,
+            "description": "<p>Posisi awal:</p><p>Berdiri tegak, kaki selebar pinggul.</p><p>Langkah:</p><ol><li>Jongkok rendah dan dukung diri anda di lantai dengan tangan di antara lutut dan di depan kaki, punggung lurus.</li><li>Menjaga tangan Anda di lantai, melompat kaki Anda ke belakang ke posisi papan tinggi.</li><li>Lompat kaki Anda ke depan untuk kembali ke posisi jongkok.</li><li>Ulangi.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 11,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 23,
+            "license": 2,
+            "license_author": "mondstern (imported from Feeel)",
+            "variations": [],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "Reza Almanda (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1734,
+            "uuid": "8b52efb2-52cb-4301-9a2c-c5a8570e3519",
+            "name": "4-tel burpees",
+            "exercise_base": 997,
+            "description": "<p>Beginpositie:</p><p>Sta recht, voeten op heupbreedte uit elkaar.</p><p>Stappen:</p><ol><li>Hurk laag en ondersteun jezelf op de vloer met je handen tussen de knieën en voor je voeten, je rug recht.</li><li>Houd je handen op de vloer, spring je benen naar achteren in een hoge plankpositie.</li><li>Spring met je voeten naar voren om terug te keren naar de squat positie.</li><li>Herhaal.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 11,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 6,
+            "license": 2,
+            "license_author": "mondstern (imported from Feeel)",
+            "variations": [],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "floris van den bosch (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Heimen Stoffels (imported from Feeel)",
+                "Daan Vervacke (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1737,
+            "uuid": "5e1701af-7e33-4564-bdfe-3e1260afc204",
+            "name": "4-العد burpees",
+            "exercise_base": 997,
+            "description": "<p>وضع البداية:</p><p>الوقوف بشكل مستقيم ، والقدمين متباعدتين.</p><p>الخطوات:</p><ol><li>اجلس منخفضًا وادعم نفسك على الأرض بيديك بين الركبتين وأمام قدميك ، وظهرك مستقيم.</li><li>إبقاء يديك على الأرض ، قفز ساقيك إلى الوراء في وضع اللوح الخشبي العالي.</li><li>اقفز قدميك للأمام للعودة إلى وضعية القرفصاء.</li><li>كرر.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 11,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 17,
+            "license": 2,
+            "license_author": "Rex_sa (imported from Feeel)",
+            "variations": [],
+            "author_history": [
+                "Rex_sa (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1316,
+            "uuid": "332b844f-816c-486d-8ef4-f58517514061",
+            "name": "Abdominal",
+            "exercise_base": 167,
+            "description": "<ol><li>Deite-se de barriga para cima no chão com os joelhos dobrados.</li><li>Curve os ombros em direção a pélvis. As mãos podem ficar atrás ou do lado do pescoço ou cruzadas sobre o peito.</li><li>Repita</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 10,
+            "muscles": [
+                6
+            ],
+            "muscles_secondary": [
+                3
+            ],
+            "equipment": [
+                4
+            ],
+            "language": 7,
+            "license": 2,
+            "license_author": "gbpu (imported from Feeel)",
+            "variations": [
+                1316
+            ],
+            "author_history": [
+                "Eduardo Celino (imported from Feeel)",
+                "mondstern (imported from Feeel)",
+                "gbpu (imported from Feeel)",
+                "Vinicius Rodrigues (imported from Feeel)",
+                "Rodolfo Candido (imported from Feeel)",
+                "flexagoon (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 2083,
+            "uuid": "30d08ec5-56cf-4fcc-bc78-0aec097006cd",
+            "name": "Abdominales",
+            "exercise_base": 591,
+            "description": "Siéntese en una colchoneta, sus pantorrillas descansan en un banco, las rodillas forman un ángulo recto. Mantenga sus manos detrás de su cuello. Sube ahora con un movimiento de balanceo de tu espalda, debes sentir cómo las vértebras individuales pierden contacto con la colchoneta. En el punto más alto, contrae los abdominales tanto como puedas y mantenlos allí durante 2 segundos. Baja ahora, desenrollando tu espalda.",
+            "creation_date": "2023-05-18",
+            "category": 10,
+            "muscles": [
+                6
+            ],
+            "muscles_secondary": [],
+            "equipment": [],
+            "language": 4,
+            "license": 2,
+            "license_author": "Franpol",
+            "variations": [
+                1311,
+                2083
+            ],
+            "author_history": [
+                "Franpol"
+            ]
+        },
+        {
+            "id": 1311,
+            "uuid": "ca89f09f-e7d0-4490-bf43-b539fd86c6ee",
+            "name": "Abdominales",
+            "exercise_base": 167,
+            "description": "<ol><li>Acuéstese boca arriba en el suelo con las rodillas dobladas.</li><li>Flexione los hombros hacia la pelvis. Las manos pueden estar detrás o al costado del cuello o cruzadas sobre el pecho.</li><li>Repita</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 10,
+            "muscles": [
+                6
+            ],
+            "muscles_secondary": [
+                3
+            ],
+            "equipment": [
+                4
+            ],
+            "language": 4,
+            "license": 2,
+            "license_author": "Luis Alfredo Figueroa Bracamontes (imported from Feeel)",
+            "variations": [
+                1311,
+                2083
+            ],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "Gabriel Tandil (imported from Feeel)",
+                "Luis Alfredo Figueroa Bracamontes (imported from Feeel)",
+                "Diego Sanguinetti (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1061,
+            "uuid": "60d8018d-296f-4c62-a80b-f609a25d34ea",
+            "name": "Abdominal Stabilization",
+            "exercise_base": 56,
+            "description": "",
+            "creation_date": "2022-10-11",
+            "category": 10,
+            "muscles": [
+                6
+            ],
+            "muscles_secondary": [
+                14
+            ],
+            "equipment": [
+                4
+            ],
+            "language": 2,
+            "license": 2,
+            "license_author": "wger.de",
+            "variations": [],
+            "author_history": [
+                "wger.de"
+            ]
+        },
+        {
+            "id": 1312,
+            "uuid": "5973bc39-5589-436d-aa68-f0cb22b6f385",
+            "name": "Abdominaux",
+            "exercise_base": 167,
+            "description": "<ol><li>Allongez-vous sur le sol, face contre terre, genoux pliés.</li><li>Courbez les épaules vers le bassin. Les mains peuvent être derrière ou à côté du cou ou croisées sur la poitrine.</li><li>Répétez</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 10,
+            "muscles": [
+                6
+            ],
+            "muscles_secondary": [
+                3
+            ],
+            "equipment": [
+                4
+            ],
+            "language": 12,
+            "license": 2,
+            "license_author": "Miroslav Mazel (imported from Feeel)",
+            "variations": [
+                1312
+            ],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "Maxime Leroy (imported from Feeel)",
+                "Miroslav Mazel (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Jonathan D. (imported from Feeel)",
+                "Clément Mondon (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 2055,
+            "uuid": "5eda0a41-3a58-4424-acdb-5a02a4e5c113",
+            "name": "Abduktion im Stand",
+            "exercise_base": 1096,
+            "description": "Das Training des stabilen Standes dominat auf einem Bein ist beiseitig entscheidend. Einerseits um Beschwerden vorzubeugen und andererseits um eine stabile Basis zu legen.Die übende Person stellt sich in die gewohnte Standposition und versucht bei stabilem Oberkörper das unbelastete Bein wiederholt zu heben und und in Hüfte und Knie zu beugen und wieder zu senken. Die Bewegung wird jedenfalls auch mit der anderen Seite wiederholt.\nDie Übung trainiert die Stabilität der hüftumgebenden Muskulatur",
+            "creation_date": "2023-03-13",
+            "category": 9,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 2,
+            "license": 2,
+            "license_author": "tregga",
+            "variations": [],
+            "author_history": [
+                "tregga"
+            ]
+        },
+        {
+            "id": 2056,
+            "uuid": "8d125c27-f531-4caa-89da-7dc20bebfa49",
+            "name": "Abduktion im Stand",
+            "exercise_base": 1097,
+            "description": "Das Training des stabilen Standes dominat auf einem Bein ist beiseitig entscheidend. Einerseits um Beschwerden vorzubeugen und andererseits um eine stabile Basis zu legen.Die übende Person stellt sich in die gewohnte Standposition und versucht bei stabilem Oberkörper das unbelastete Bein wiederholt zu heben und und in Hüfte und Knie zu beugen und wieder zu senken. Die Bewegung wird jedenfalls auch mit der anderen Seite wiederholt.\nDie Übung trainiert die Stabilität der hüftumgebenden Muskulatur",
+            "creation_date": "2023-03-13",
+            "category": 9,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 2,
+            "license": 2,
+            "license_author": "tregga",
+            "variations": [],
+            "author_history": [
+                "tregga"
+            ]
+        },
+        {
+            "id": 174,
+            "uuid": "99881bdd-43d7-4c3b-82ed-9c187d0455b7",
+            "name": "Abduktoren-Maschine",
+            "exercise_base": 12,
+            "description": "<ul>\n<li>in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind</li>\n<li>den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen</li>\n<li>mit den Händen an den Griffen festhalten</li>\n<li>die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken</li>\n<li>danach die Beine wieder zusammen führen</li>\n<li>das Gesäß nicht vom Sitz abheben</li>\n<li>beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatmen</li>\n</ul>",
+            "creation_date": "2013-07-19",
+            "category": 9,
+            "muscles": [
+                8
+            ],
+            "muscles_secondary": [],
+            "equipment": [],
+            "language": 1,
+            "license": 1,
+            "license_author": "flori",
+            "variations": [],
+            "author_history": [
+                "flori"
+            ]
+        },
+        {
+            "id": 1906,
+            "uuid": "afd72ed7-5ca8-47a8-ae8f-5f24679b995c",
+            "name": "Abwechselnde Bizepscurls",
+            "exercise_base": 1012,
+            "description": "<p>Ausgangsposition:</p><p>Beginnen Sie im Stehen mit Kurzhanteln in jeder Hand, mit geradem Rücken und hüftbreit auseinander stehenden Füßen. Die Arme sind entspannt und zeigen nach unten. Die Knie sollten leicht gebeugt, die Bauchmuskeln angespannt und die Schultern nach unten gerichtet sein.</p><p>Die Schritte:</p><ol><li>Beugen Sie einen Arm am Ellenbogen und führen Sie die Hantel bis zur Schulter. Ihr Oberarm sollte während dieser Bewegung unbeweglich bleiben.</li><li>Bringen Sie die Hantel wieder nach unten, bis sich Ihr Arm in seiner ursprünglichen, entspannten Position befindet.</li><li>Wiederholen Sie die Übung mit dem anderen Arm.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 8,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                3
+            ],
+            "language": 1,
+            "license": 2,
+            "license_author": "Miroslav Mazel (imported from Feeel)",
+            "variations": [],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "Miroslav Mazel (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1457,
+            "uuid": "8fc3f256-2dbc-4236-b32f-08c00b6d0c36",
+            "name": "Accroupi",
+            "exercise_base": 615,
+            "description": "<ol><li>Debout, les pieds écartés à la largeur des épaules</li><li>Déplacez les hanches vers l'arrière et pliez les genoux et les hanches pour abaisser le torse.</li><li>Répétez</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 9,
+            "muscles": [
+                10
+            ],
+            "muscles_secondary": [
+                8
+            ],
+            "equipment": [
+                1
+            ],
+            "language": 12,
+            "license": 2,
+            "license_author": "Miroslav Mazel (imported from Feeel)",
+            "variations": [
+                1447,
+                1940,
+                1437,
+                1457,
+                1367,
+                1471
+            ],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "Maxime Leroy (imported from Feeel)",
+                "Miroslav Mazel (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Jonathan D. (imported from Feeel)",
+                "Clément Mondon (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1888,
+            "uuid": "6cff873b-59a1-4a1c-a2f6-107e6927f208",
+            "name": "Achternek rekken",
+            "exercise_base": 1010,
+            "description": "<p>Beginpositie:</p><p>Zit rechtop op een stoel of een stevig kussen.</p><p>Stappen:</p><ol><li>Adem uit en kantel uw hoofd naar voren, kin naar de borst, waarbij u de handen achter uw hoofd plaatst.</li><li>Gebruik uw handen om uw hoofd heel licht naar beneden te trekken. Houd 5 seconden vast.</li><li><ol start=\"3\"><li>Trek de schouders naar achteren en naar beneden met behulp van de spieren in uw rug. Dit zou de nek meer moeten strekken. Houd 5 seconden vast.</li></ol></li><li>Duw nu zachtjes uw hoofd terug omhoog, terwijl u het ook naar beneden trekt met uw handen. Balanceer beide krachten zodat uw hoofd niet beweegt. Houd dit minstens 5 seconden vast.</li><li>Breng uw vingers naar uw voorhoofd en gebruik ze om uw hoofd zachtjes terug in de oorspronkelijke positie te brengen.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 12,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 6,
+            "license": 2,
+            "license_author": "mondstern (imported from Feeel)",
+            "variations": [],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "floris van den bosch (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Heimen Stoffels (imported from Feeel)",
+                "Daan Vervacke (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1706,
+            "uuid": "40a525d5-27ac-4cef-8c87-5366f5a4b6d3",
+            "name": "Achterwaartse arm cirkels",
+            "exercise_base": 995,
+            "description": "<ol><li>Ga rechtop staan met een rechte rug.</li><li>Houd je armen recht, houd ze voor je, hef ze boven je hoofd, zet de beweging voort tot achter je rug en naar beneden naar de beginpositie</li><li>Blijf je armen cirkelen zoals beschreven in stap 2.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 8,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 6,
+            "license": 2,
+            "license_author": "mondstern (imported from Feeel)",
+            "variations": [
+                1693,
+                1706
+            ],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "floris van den bosch (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Heimen Stoffels (imported from Feeel)",
+                "Daan Vervacke (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1830,
+            "uuid": "02b6fd19-5be2-474c-b268-939d4e82cefc",
+            "name": "Achterwaartse schouder draaiing",
+            "exercise_base": 1005,
+            "description": "<p>Beginpositie:</p><p>Zit of sta met rechte rug.</p><p>Stappen:</p><ol><li>Plaats uw handen op uw schouders.</li><li>Roteer herhaaldelijk beide schoudergewrichten in een cirkelvormige beweging in een gematigd tempo.</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 12,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                7
+            ],
+            "language": 6,
+            "license": 2,
+            "license_author": "mondstern (imported from Feeel)",
+            "variations": [
+                1818,
+                1830
+            ],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "floris van den bosch (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Heimen Stoffels (imported from Feeel)",
+                "Daan Vervacke (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 1314,
+            "uuid": "d09f38a4-2c88-46ef-a847-cb66289d250b",
+            "name": "Addominali",
+            "exercise_base": 167,
+            "description": "<ol><li>Sdraiati a pancia in su sul pavimento con le ginocchia piegate.</li><li>Solleva il busto verso il bacino, a 30° / 40° dal suolo. Le mani possono essere dietro o accanto al collo o incrociate sul petto.</li><li>Ripeti</li></ol>",
+            "creation_date": "2023-02-05",
+            "category": 10,
+            "muscles": [
+                6
+            ],
+            "muscles_secondary": [
+                3
+            ],
+            "equipment": [
+                4
+            ],
+            "language": 13,
+            "license": 2,
+            "license_author": "albanobattistella (imported from Feeel)",
+            "variations": [
+                1314,
+                1243,
+                2060,
+                1186
+            ],
+            "author_history": [
+                "mondstern (imported from Feeel)",
+                "albanobattistella (imported from Feeel)",
+                "Marco Galli (imported from Feeel)",
+                "Gianluca Vespignani (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)"
+            ]
+        }
+    ]
+}
