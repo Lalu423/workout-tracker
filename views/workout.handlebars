@@ -1,0 +1,16 @@
+<!-- workout.handlebars -->
+
+{{> header}}
+
+<section class="workout-section">
+  <div class="container">
+    <h2>Workouts</h2>
+    <ul class="workout-list">
+      {{#each workouts}}
+      <li><a href="/workouts/{{id}}">{{name}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+
+{{> footer}}

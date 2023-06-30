@@ -1,0 +1,146 @@
+/* style.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  /* Navigation */
+  .navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Homepage */
+  .homepage-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .homepage-section h2 {
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+  }
+  
+  .homepage-section p {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  /* Login */
+  .login-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .login-form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Profile */
+  .profile-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .profile-section h2 {
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+  }
+  
+  .profile-section p {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  /* Workout */
+  .workout-section {
+    padding: 40px 20px;
+  }
+  
+  .workout-section h2 {
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+  }
+  
+  .workout-section p {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .workout-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .workout-list li {
+    margin-bottom: 10px;
+  }
+  
+  .workout-list a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .workout-list a:hover {
+    text-decoration: underline;
+  }
+  
