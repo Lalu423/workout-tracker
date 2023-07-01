@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
+class Food extends Model {}
+
 const macros = [
     { name: 'Carbohydrates', description: 'A major source of energy for the body.' },
     { name: 'Protains', description: 'Essential for building and reparing tissues and supporting various bodily functions.' },
@@ -25,3 +27,5 @@ app.get('/meal-plan', (req, res) => {
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 })
+
+module.exports = Food;
