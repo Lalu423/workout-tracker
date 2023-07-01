@@ -1,4 +1,4 @@
-const workout = async function logJSONData() { 
+const workout = async function populateDropdown() { 
 
 //     curl \
 //   -X POST \
@@ -23,11 +23,39 @@ const workout = async function logJSONData() {
     //     })
     // })
   const jsonData = await response.json();
-  console.log(jsonData);
+  //console.log(jsonData);
+  const dropDown = document.getElementById("exerciseDropdown");
+
+  jsonData.results.forEach((exercise) => {
+    const option = document.createElement("option");
+    option.text = exercise.name;
+    option.value = exercise.id;
+    dropDown.appendChild(option);
+  });
 
   return jsonData;
-}
+};
 
+// const dropdownMenu = document.getElementById("myDropdown");
+
+// jasonData.forEach(item => {
+//   const option = document.createElement("option");
+//   option.value = item.name;
+//   option.text = item,id;
+//   dropdownMenu.appendChild(option);
+// });
+
+// const displayWorkout = async () => {
+//   const options = await workout();
+//   options.jsonData.forEach(option => {
+//     const newOption = documnet.createElement("option");
+//     console.log(option);
+//     newOption.value = option.name;
+//     newOption.text = option.name;
+//     results.appendChild(newOption);
+//   });
+// };
+// displayWorkout();
 
 
 
