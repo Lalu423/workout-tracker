@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { workout } = require('../utils/workout-api');
 
 
-router.get('/workout-page', async (req, res) => {
+router.get('/workout', async (req, res) => {
     try{ 
         const workoutData = await workout();
         //res.json(workoutData)
