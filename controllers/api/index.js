@@ -6,9 +6,10 @@ const seedDbRoutes = require('./seedDbRoutes');
 
 
 
+
 router.use('/workout', workoutRoutes);
 router.use('/user', userRoutes);
-router.use('/food', foodRoutes);
+// router.use('/food', foodRoutes);
 router.use('/seedDb', seedDbRoutes);
 
 

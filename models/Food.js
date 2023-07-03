@@ -1,3 +1,4 @@
+const { Model, DataTypes } = require('sequelize');
 const express = require('express');
 const app = express();
 app.use(express.json());

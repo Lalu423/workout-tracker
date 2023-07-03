@@ -51,5 +51,5 @@ router.get('/workout-page', async (req, res) => {
 
 
 
-router.get()
+// router.get()
 module.exports = router
