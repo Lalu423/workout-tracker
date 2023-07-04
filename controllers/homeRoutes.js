@@ -3,6 +3,7 @@ const { User, Food, Workout } = require('../models');
 const { workout } = require('../utils/workout-api');
 
 
+
 router.get("/", async (req, res) => {
     try {
         const workoutData = await Workout.findAll({
@@ -60,5 +61,5 @@ router.get('/workout-page', async (req, res) => {
 
 
 
-// router.get()
+//router.get()
 module.exports = router
