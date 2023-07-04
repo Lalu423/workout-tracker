@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Workout Tracker</h1>
+    <nav>
+        <!-- Conditional login logout links -->
+        {{#if logged_in}} 
+        <a href="../profile.handlebars">Profile</a>
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+        <a href="../login.handlebars">Login</a>
+        {{/if}}
+    </nav>
+    </header>
+ {{{ body }}}
+
+ {{ testjson }}
+</body>
+</html>
