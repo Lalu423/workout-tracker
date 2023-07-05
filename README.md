@@ -9,7 +9,8 @@ Express.js: A web application framework for Node.js that provides a robust set o
 Handlebars.js: A popular templating engine that allows the separation of HTML markup and JavaScript logic.
 MySQL: An open-source relational database management system that provides a reliable and scalable solution for storing and managing data.
 Sequelize ORM: A powerful ORM that simplifies database operations by mapping JavaScript objects to database tables.
-Functionality
+
+## Functionality
 
 The Workout Tracker website provides the following functionality:
 
