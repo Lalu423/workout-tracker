@@ -9,19 +9,23 @@ const workout = async function workoutData() {
       headers: { Authorization: "Token 56c76d8178d0eee843d444734daf71278e39d1ab" }
     });
 
-    if (!response.ok) {
-      throw new Error("Request failed with status " + response.status);
-    }
-
     const data = await response.json();
-    console.log(data);
 
+    const dropdown = document.getElementById('dropdown');
+
+    data.results.forEach(item => {
+      const option = document.createElement('option');
+      option.value = item.id;
+      option.textContent = item.name;
+
+      dropdown.appendChild(option);
+    });
   } catch (error) {
-    console.error; {
-      throw new Error('Failed to fetch workout data' + error.message);
-    }
+    console.error('Error:', error);
   }
 };
+
+workoutData();
 
 
 
