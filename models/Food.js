@@ -1,7 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const express = require('express');
-const app = express();
-app.use(express.json());
+const sequelize = require('../config/connection')
 
 class Food extends Model {}
 
