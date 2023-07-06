@@ -1,6 +1,6 @@
 const { workout } = require('../../utils/workout-api');
 const router = require('express').Router();
-const { Workout }= require('../../models');
+const { Workout } = require('../../models');
 
 // create workout
 // POST /api/workoutRoute
@@ -14,20 +14,20 @@ router.post("/", async (req, res) => {
 
 
 router.get('/', async (req, res) => {
-  try {
-    const response = await fetchWorkoutData();
-    const data = await response.json();
+    try {
+        const response = await workout();
+        const data = await response.json();
 
-    const filteredData = data.map(item => ({
-      name: item.name,
-      description: item.description,
-    }));
+        const filteredData = data.map(item => ({
+            name: item.name,
+            description: item.description,
+        }));
 
-    res.json(filteredData);
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Failed to fetch workout data' });
-  }
+        res.json(filteredData);
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).json({ error: 'Failed to fetch workout data' });
+    }
 });
 
 module.exports = router;
