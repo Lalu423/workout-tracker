@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Food, Workout } = require('../models');
+const withAuth = require('../utils/auth');
 const { workout } = require('../utils/workout-api');
 
 
@@ -19,7 +20,7 @@ router.get("/", async (req, res) => {
 
         res.render('homepage', {
          workouts, 
-            //loggenin: req.session.logged_in
+            loggenin: req.session.logged_in
         });
     } catch (err) {
         res.status(500).json(err);
@@ -27,11 +28,11 @@ router.get("/", async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
-        res.redirect('/profile');
-        return;
-    }
-
+    // if (req.session.logged_in) {
+    //     res.redirect('/profile');
+    //     return;
+    // }
+console.log(req.session);
     res.render('login');
 });
 

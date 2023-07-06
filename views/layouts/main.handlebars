@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Tracker</title>
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -14,10 +14,10 @@
         <nav>
             <!-- Conditional login logout links -->
             {{#if logged_in}}
-            <a href="../profile.handlebars">Profile</a>
+            <a href="../profile">Profile</a>
             <button class="no-button" id="logout">Logout</button>
             {{else}}
-            <a href="../login.handlebars">Login</a>
+            <a href="../login">Login</a>
             {{/if}}
         </nav>
     </header>
