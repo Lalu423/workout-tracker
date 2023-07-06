@@ -3,10 +3,10 @@ const sequelize = require('../config/connection');
 const { User, Workout, Food } = require('../models');
 
 // const userData = [{username: "abc", email:"abc@mail.com", password: "12345678"}]
-// const workoutData =[]
+const workoutData =[]
 
 const userData = require('./userData.json');
-const workoutData = require('./workoutData.json');
+// const workoutData = require('./workoutData.json');
 
 
 
