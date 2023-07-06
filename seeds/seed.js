@@ -6,7 +6,7 @@ const { User, Workout, Food } = require('../models');
 // const workoutData =[]
 
 const userData = require('./userData.json');
-const workoutData = require('./utils/workoutData.json');
+const workoutData = require('./workoutData.json');
 
 
 
