@@ -1,7 +1,23 @@
 {
+  "name": "workout-tracker",
+  "version": "1.0.0",
+  "description": "## Description This is a website called Workout Tracker that provides a RESTful API for managing workout data. It was developed using Node.js and Express.js. The website uses Handlebars.js as the template engine for rendering dynamic HTML pages. The database is implemented using MySQL, and Sequelize ORM is used as the object-relational mapping tool.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.7",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mysql2": "^3.4.5",
+    "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.5.0",
     "sequelize": "^6.32.1"
   }
 }
