@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
 
         res.render('homepage', {
          workouts, 
-            // loggenin: req.session.logged_in
+            //loggenin: req.session.logged_in
         });
     } catch (err) {
         res.status(500).json(err);
