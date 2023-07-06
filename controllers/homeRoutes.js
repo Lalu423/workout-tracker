@@ -8,12 +8,12 @@ const { workout } = require('../utils/workout-api');
 router.get("/", async (req, res) => {
     try {
         const workoutData = await Workout.findAll({
-            include: [
-                {
-                    model: User,
-                    attributes: ['name'],
-                },
-            ],
+            // include: [
+            //     {
+            //         model: User,
+            //         attributes: ['name'],
+            //     },
+            // ],
         });
 
          const workouts = workoutData.map((exercise) => exercise.get({ plain: true }));
