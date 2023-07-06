@@ -13,20 +13,21 @@ router.post("/", async (req, res) => {
 });
 
 
-router.get("/", async (req, res) => {
-    try{ 
-        const workoutData = await workout();
-        res.json(workoutData)
-    }
-    catch(err){
-        console.log(err);
-        res.status(400).json(err)
-    }
-})
+router.get('/', async (req, res) => {
+  try {
+    const response = await fetchWorkoutData();
+    const data = await response.json();
 
+    const filteredData = data.map(item => ({
+      name: item.name,
+      description: item.description,
+    }));
 
-
-
-
+    res.json(filteredData);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Failed to fetch workout data' });
+  }
+});
 
 module.exports = router;

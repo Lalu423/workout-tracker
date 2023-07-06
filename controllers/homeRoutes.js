@@ -38,20 +38,13 @@ router.get('/login', (req, res) => {
 
 
 router.get('/workout-page', async (req, res) => {
-   //return res.render('workout');
-    try{ 
-        const workoutData = await workout();
-    res.json(workoutData)
-    res.render('workout',{
-        testjson: JSON.stringify(workoutData)
-    })
-        res.render('workout', workoutData)
-    }
-    catch(err){
-        console.log(err);
-        res.status(400).json(err)
-    }
-
+  try {
+    const workoutData = await workout();
+    res.render('workout', { workoutData });
+  } catch (error) {
+    console.error(error);
+    res.status(400).json({ error: 'Failed to fetch workout data' });
+  }
 });
 
 
