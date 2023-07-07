@@ -33,7 +33,19 @@ const workout = async function workoutData() {
   }
 };
 
+const generatePlannerHTML = () => {
+  const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const plannerTemplate = document.getElementById("planner-template").innerHTML;
+  const compiledTemplate = Handlebars.compile(plannerTemplate);
+  const plannerHTML = compiledTemplate({ days: daysOfWeek });
+  const plannerContainer = document.getElementById("planner-container");
+  plannerContainer.innerHTML = plannerHTML;
+};
+
 workoutData();
+
+generatePlannerHTML();
+
 
 
 
