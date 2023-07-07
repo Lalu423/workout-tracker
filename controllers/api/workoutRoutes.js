@@ -6,14 +6,13 @@ const { Workout } = require('../../models');
 // POST /api/workoutRoute
 
 router.post("/", async (req, res) => {
-    console.log("did it come through?", req.body)
 
     Workout.create({
         user_id: req.session.user_id,
         name: req.body.name,
-        description: req.body.description,
-        reps: req.body.reps,
-        sets: req.body.sets
+
+        description: req.body.description, sets: req.body.sets, reps: req.body.sets, user_id: req.session.user_id
+
     })
 });
 

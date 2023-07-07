@@ -48,23 +48,17 @@ const workout = async function workoutData() {
       const savedData = document.createElement('div');
       savedData.textContent = `Name: ${selectedExercise.name}, Description: ${selectedExercise.description}`;
       savedDataContainer.appendChild(savedData);
+     
+      const name = selectedExercise.name;
+      const description = selectedExercise.description;
+      const sets = document.querySelector('#sets').value.trim();
+      const reps = document.querySelector('#reps').value.trim();
 
-
-
-
-
-      const response = await fetch("/api/workout", {
-        method: "POST",
-        body: JSON.stringify({
-          name: selectedExercise.name,
-          description: selectedExercise.description,
-          sets: document.getElementById("ddSets").value,
-          reps: document.getElementById("ddReps").value
-        })
-
-      });
-
-
+      const response = await fetch('/api/workout', {
+        method: 'POST',
+        body: JSON.stringify({ name, description, sets, reps }),
+        headers: { 'Content-Type': 'application/json' },
+    });
 
     });
   } catch (error) {
