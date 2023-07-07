@@ -12,6 +12,8 @@ const workout = async function workoutData() {
     const data = await response.json();
 
     const dropdown = document.getElementById('dropdown');
+    const ddSets = document.getElementById('ddSets');
+    const ddReps = document.getElementById('ddReps');
 
     data.results.forEach(item => {
       const option = document.createElement('option');
@@ -21,11 +23,26 @@ const workout = async function workoutData() {
       dropdown.appendChild(option);
     });
 
+    for (let i = 1; i <= 4; i++) {
+      const option = document.createElement('option');
+      option.value = i;
+      option.textContent = i;
+      ddSets.appendChild(option)
+    }
+
+
+    for (let i = 1; i <= 20; i++) {
+      const option = document.createElement('option');
+      option.value = i;
+      option.textContent = i;
+      ddReps.appendChild(option)
+    }
+
     const saveButton = document.getElementById('saveButton');
     saveButton.addEventListener('click', async () => {
       const selectedId = dropdown.value;
       const selectedExercise = data.results.find(item => item.id === Number(selectedId));
-      
+
       // Save to user
       const savedDataContainer = document.getElementById('savedDataContainer');
       const savedData = document.createElement('div');
@@ -42,6 +59,7 @@ const workout = async function workoutData() {
         body: JSON.stringify({ name, description, sets, reps }),
         headers: { 'Content-Type': 'application/json' },
     });
+
     });
   } catch (error) {
     console.error('Error:', error);
@@ -66,4 +84,7 @@ generatePlannerHTML();
 
 
 
-// module.exports = { workout }
+
+module.exports = { workout }
+
+

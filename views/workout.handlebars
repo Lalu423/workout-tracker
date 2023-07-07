@@ -7,12 +7,16 @@
     <input type="text" id="sets" >
     <li class="reps">Reps:</li>
     <input type="text" id="reps" >
+
 </ul>
-<div id="workout-card">
-    <select id="dropdown"></select>
-    <button id="saveButton">Save Selection</button>
-<div id="descriptionContainer"></div>
-<div id="savedDataContainer"></div>
+<div id="workout-card" data-userid="{{id}}">
+  <select id="dropdown"></select>
+  <select id="ddSets" name="sets"></select>
+  <select id="ddReps" name="reps"> </select>
+
+  <button id="saveButton">Save Selection</button>
+  <div id="descriptionContainer"></div>
+  <div id="savedDataContainer"></div>
 </div>
 
 <h1>Workout Data</h1>
