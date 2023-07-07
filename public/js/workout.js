@@ -25,8 +25,12 @@ const workout = async function workoutData() {
     saveButton.addEventListener('click', () => {
       const selectedId = dropdown.value;
       const selectedExercise = data.results.find(item => item.id === Number(selectedId));
-      const descriptionContainer = document.getElementById('descriptionContainer');
-      descriptionContainer.textContent = selectedExercise.description;
+      
+      // Save to user
+      const savedDataContainer = document.getElementById('savedDataContainer');
+      const savedData = document.createElement('div');
+      savedData.textContent = `Name: ${selectedExercise.name}, Description: ${selectedExercise.description}`;
+      savedDataContainer.appendChild(savedData);
     });
   } catch (error) {
     console.error('Error:', error);
