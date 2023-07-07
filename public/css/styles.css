@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a, nav button{
+    margin: 0 10px;
+    text-decoration: none;
+
+}
+
+nav button, .button{
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: blue;
+    color: aliceblue;
+    border-width: 0;
+
+    
+}
+
+nav button:hover{
+    background-color: rgb(121, 121, 194);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+}

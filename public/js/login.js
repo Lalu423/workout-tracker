@@ -17,7 +17,7 @@ console.log(email, password);
 
         if (response.ok) {
             //if successful, redirect the browser to the profile page. 
-            document.location.replace('/profile');
+            document.location.replace('/workout-page');
         } else {
             alert(response.statusText);
         }
@@ -39,7 +39,7 @@ const signupFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/profile');
+            document.location.replace('/workout-page');
         } else {
             alert(response.statusText);
         }

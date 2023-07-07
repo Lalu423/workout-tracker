@@ -46,8 +46,9 @@ const generatePlannerHTML = () => {
   plannerContainer.innerHTML = plannerHTML;
 };
 
-workoutData();
+// workoutData();
 
+workout()
 generatePlannerHTML();
 
 
