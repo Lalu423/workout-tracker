@@ -7,6 +7,7 @@ const { workout } = require('../utils/workout-api');
 
 router.get("/", async (req, res) => {
     try {
+        console.log("req.session", req.session);
         const workoutData = await Workout.findAll({
             // include: [
             //     {
@@ -19,8 +20,10 @@ router.get("/", async (req, res) => {
         const workouts = workoutData.map((exercise) => exercise.get({ plain: true }));
 
         res.render('homepage', {
-            workouts,
-            loggenin: req.session.logged_in
+
+         workouts, 
+            logged_in: req.session.logged_in
+
         });
     } catch (err) {
         res.status(500).json(err);
@@ -81,6 +84,15 @@ router.get('/login', (req, res) => {
 
 router.get('/workout-page', async (req, res) => {
 
+  try {
+    const workoutData = await workout();
+    res.render('workout', { workoutData, logged_in: req.session.logged_in});
+  } catch (error) {
+    console.error(error);
+    res.status(400).json({ error: 'Failed to fetch workout data' });
+  }
+
+
     try {
         // Find the logged in user based on the session ID
         const userData = await User.findByPk(req.session.user_id, {
@@ -106,6 +118,7 @@ router.get('/workout-page', async (req, res) => {
         console.log(err)
         res.status(500).json(err);
     }
+
 
 
 
