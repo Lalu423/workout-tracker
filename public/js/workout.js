@@ -22,7 +22,7 @@ const workout = async function workoutData() {
     });
 
     const saveButton = document.getElementById('saveButton');
-    saveButton.addEventListener('click', () => {
+    saveButton.addEventListener('click', async () => {
       const selectedId = dropdown.value;
       const selectedExercise = data.results.find(item => item.id === Number(selectedId));
       
@@ -31,6 +31,17 @@ const workout = async function workoutData() {
       const savedData = document.createElement('div');
       savedData.textContent = `Name: ${selectedExercise.name}, Description: ${selectedExercise.description}`;
       savedDataContainer.appendChild(savedData);
+     
+      const name = selectedExercise.name;
+      const description = selectedExercise.description;
+      const sets = document.querySelector('#sets').value.trim();
+      const reps = document.querySelector('#reps').value.trim();
+
+      const response = await fetch('/api/workout', {
+        method: 'POST',
+        body: JSON.stringify({ name, description, sets, reps }),
+        headers: { 'Content-Type': 'application/json' },
+    });
     });
   } catch (error) {
     console.error('Error:', error);

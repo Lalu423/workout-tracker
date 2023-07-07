@@ -39,3 +39,19 @@ header{
     justify-content: center;
    align-items: center;
 }
+
+#loginForms{
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-form > div, .signup-form > div{
+margin: 10px 0;
+
+}
+
+#landingPage{
+    background: url("/images/break-workout_602724.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+}
