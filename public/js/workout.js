@@ -20,6 +20,14 @@ const workout = async () => {
 
       dropdown.appendChild(option);
     });
+
+    const saveButton = document.getElementById('saveButton');
+    saveButton.addEventListener('click', () => {
+      const selectedId = dropdown.value;
+      const selectedExercise = data.results.find(item => item.id === Number(selectedId));
+      const descriptionContainer = document.getElementById('descriptionContainer');
+      descriptionContainer.textContent = selectedExercise.description;
+    });
   } catch (error) {
     console.error('Error:', error);
   }
