@@ -97,8 +97,8 @@ router.get('/profile', async (req, res) => {
 router.get('/workout-page', async (req, res) => {
 
   try {
-    const workoutData = await workout();
-    res.render('workout', { workoutData, logged_in: req.session.logged_in});
+    // const workoutData = await workout();
+    res.render('workout', { logged_in: req.session.logged_in});
   } catch (error) {
     console.error(error);
     res.status(400).json({ error: 'Failed to fetch workout data' });
