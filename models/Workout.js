@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Workout extends Model {}
+class Workout extends Model { }
 
 Workout.init(
   {
@@ -42,6 +42,7 @@ Workout.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'workout',
+    paranoid: true
   }
 );
 
