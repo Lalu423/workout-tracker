@@ -13,7 +13,7 @@ const workout = async () => {
     const data = await response.json();
     console.log(data);
     //alert("here");
-    return response;
+    //return response;
   } catch (error) {
     console.error('Error:', error);
     throw new Error('Failed to fetch workout data: ' + error.message);
