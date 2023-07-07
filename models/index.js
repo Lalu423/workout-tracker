@@ -2,8 +2,9 @@ const User = require('./User');
 const Workout = require('./Workout');
 const Food = require('./Food');
 
+
 User.hasMany(Workout, {
-    foreignKey: 'user_id', 
+    foreignKey: 'user_id',
     onDelete: 'CASCADE'
 });
 

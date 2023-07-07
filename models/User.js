@@ -48,10 +48,11 @@ User.init(
             },
         },
         sequelize,
-        timestamp: false, 
+        timestamp: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'user',
+        paranoid: true
     }
 );
 
