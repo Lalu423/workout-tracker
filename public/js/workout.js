@@ -2,7 +2,7 @@ console.log("workout script works");
 
 
 
-const workout = async () => {
+const workout = async function workoutData() {
   try {
     const response = await fetch("https://wger.de/api/v2/exercise", {
       method: "GET",
@@ -10,7 +10,7 @@ const workout = async () => {
     });
 
     const data = await response.json();
-    console.log(data);
+
     const dropdown = document.getElementById('dropdown');
 
     data.results.forEach(item => {
@@ -33,8 +33,21 @@ const workout = async () => {
   }
 };
 
-workout();
+const generatePlannerHTML = () => {
+  const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const plannerTemplate = document.getElementById("planner-template").innerHTML;
+  const compiledTemplate = Handlebars.compile(plannerTemplate);
+  const plannerHTML = compiledTemplate({ days: daysOfWeek });
+  const plannerContainer = document.getElementById("planner-container");
+  plannerContainer.innerHTML = plannerHTML;
+};
+
+workoutData();
+
+generatePlannerHTML();
 
 
 
-//module.exports = { workout }
+
+
+// module.exports = { workout }
