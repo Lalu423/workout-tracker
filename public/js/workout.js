@@ -11,6 +11,20 @@ const workout = async function workoutData() {
 
     const data = await response.json();
 
+    console.log(
+      "workout data",
+      data
+    )
+
+    const response2 = await fetch("https://wger.de/api/v2/exerciseimage", {
+      method: "GET",
+      headers: { Authorization: "Token 56c76d8178d0eee843d444734daf71278e39d1ab" }
+    });
+
+    const data2 = await response2.json();
+
+    console.log("workout image", data2)
+
     const dropdown = document.getElementById('dropdown');
     // const ddSets = document.getElementById('ddSets');
     // const ddReps = document.getElementById('ddReps');
@@ -48,7 +62,7 @@ const workout = async function workoutData() {
       const savedData = document.createElement('div');
       savedData.textContent = `Name: ${selectedExercise.name}, Description: ${selectedExercise.description}`;
       savedDataContainer.appendChild(savedData);
-     
+
       const name = selectedExercise.name;
       const description = selectedExercise.description;
       const sets = document.querySelector('#sets').value.trim();
@@ -58,7 +72,7 @@ const workout = async function workoutData() {
         method: 'POST',
         body: JSON.stringify({ name, description, sets, reps }),
         headers: { 'Content-Type': 'application/json' },
-    });
+      });
 
     });
   } catch (error) {

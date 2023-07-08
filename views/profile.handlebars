@@ -26,24 +26,32 @@
         <input type="submit" id="create-btn" class="btn btn-primary">Create</input>
       </div>
     </form> --}}
-  {{!-- </div> --}}
+    {{!-- </div> --}}
 
   <div class="col-md-6 project-list">
-  {{#if workout}}
+    {{#if workout}}
     <h3>Current Projects:</h3>
 
     {{#each workout }}
-    <div class="row mb-2">
+    <div class="row mb-2 ">
       <div class="col-md-8">
         {{!-- <h4><a href="/workout/{{workout.id}}">{{workout.name}}</a></h4> --}}
-        {{name}}
+        <h4>{{name}}</h4>
+        <p>{{{description}}}</p>
+        <p>
+          <strong>Sets: </strong> {{sets}}
+          <strong>Reps: </strong> {{reps}}
+          <a href="/workout/delete/{{id}}">Delete</a>
+
+        </p>
+
       </div>
       {{!-- <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{workout.id}}">DELETE</button>
       </div> --}}
     </div>
     {{/each}}
-  {{/if}}
+    {{/if}}
   </div>
 </div>
 

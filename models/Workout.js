@@ -22,10 +22,12 @@ Workout.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+
     },
     description: {
       type: DataTypes.STRING,
       allowNull: false,
+      length: 900
     },
     sets: {
       type: DataTypes.INTEGER,
