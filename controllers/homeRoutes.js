@@ -79,12 +79,13 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/profile', async (req, res) => {
-    console.log(req.session);
+    console.log("ghuilhuiltguylrftydr123");
     const workoutData = await Workout.findAll({
     where:{user_id:req.session.user_id}
     });
 
      const workout = workoutData.map((exercise) => exercise.get({ plain: true }));
+     console.log("workout", workout);
     res.render('profile', {workout, username:req.session.username,             logged_in: req.session.logged_in
     });
 

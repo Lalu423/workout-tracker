@@ -12,8 +12,8 @@ const workout = async function workoutData() {
     const data = await response.json();
 
     const dropdown = document.getElementById('dropdown');
-    const ddSets = document.getElementById('ddSets');
-    const ddReps = document.getElementById('ddReps');
+    // const ddSets = document.getElementById('ddSets');
+    // const ddReps = document.getElementById('ddReps');
 
     data.results.forEach(item => {
       const option = document.createElement('option');
@@ -23,20 +23,20 @@ const workout = async function workoutData() {
       dropdown.appendChild(option);
     });
 
-    for (let i = 1; i <= 4; i++) {
-      const option = document.createElement('option');
-      option.value = i;
-      option.textContent = i;
-      ddSets.appendChild(option)
-    }
+    // for (let i = 1; i <= 4; i++) {
+    //   const option = document.createElement('option');
+    //   option.value = i;
+    //   option.textContent = i;
+    //   ddSets.appendChild(option)
+    // }
 
 
-    for (let i = 1; i <= 20; i++) {
-      const option = document.createElement('option');
-      option.value = i;
-      option.textContent = i;
-      ddReps.appendChild(option)
-    }
+    // for (let i = 1; i <= 20; i++) {
+    //   const option = document.createElement('option');
+    //   option.value = i;
+    //   option.textContent = i;
+    //   ddReps.appendChild(option)
+    // }
 
     const saveButton = document.getElementById('saveButton');
     saveButton.addEventListener('click', async () => {
@@ -85,6 +85,6 @@ generatePlannerHTML();
 
 
 
-module.exports = { workout }
+// module.exports = { workout }
 
 
