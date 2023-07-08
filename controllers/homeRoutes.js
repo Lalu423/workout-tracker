@@ -39,30 +39,30 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/profile', withAuth, async (req, res) => {
+// router.get('/profile', withAuth, async (req, res) => {
 
-    console.log("session id", req.session.user_id)
+//     console.log("session id", req.session.user_id)
 
-    try {
-        // Find the logged in user based on the session ID
-        const userData = await User.findByPk(req.session.user_id, {
-            attributes: { exclude: ['password'] },
-            include: [{ model: Workout }],
-        });
+//     try {
+//         Find the logged in user based on the session ID
+//         const userData = await User.findByPk(req.session.user_id, {
+//             attributes: { exclude: ['password'] },
+//             include: [{ model: Workout }],
+//         });
 
 
 
-        const user = userData.get({ plain: true });
-        console.log("userData", user)
-        res.render('profile', {
-            ...user,
-            logged_in: true
-        });
-    } catch (err) {
-        console.log(err)
-        res.status(500).json(err);
-    }
-});
+//         const user = userData.get({ plain: true });
+//         console.log("userData", user)
+//         res.render('profile', {
+//             ...user,
+//             logged_in: true
+//         });
+//     } catch (err) {
+//         console.log(err)
+//         res.status(500).json(err);
+//     }
+// });
 
 router.post('/create-workout', (req,res) => {
     
