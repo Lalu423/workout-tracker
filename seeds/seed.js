@@ -19,17 +19,17 @@ const seedDatabase = async () => {
     });
 
 
-    for (const workout of workoutData) {
-        //may need to make this unique
-        let id = Math.floor(Math.random() * users.length);
-        users[id].isSoftDeleted()
+    // for (const workout of workoutData) {
+    //     //may need to make this unique
+    //     let id = Math.floor(Math.random() * users.length);
+    //     users[id].isSoftDeleted()
 
 
-        await Workout.create({
-            ...workout,
-            user_id: id + 1,
-        });
-    }
+    //     await Workout.create({
+    //         ...workout,
+    //         user_id: id + 1,
+    //     });
+    // }
 };
 
 module.exports = seedDatabase;
