@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --clr--bg: white;
+  --clr--box: white;
+  --ff--body: "Merriweather", serif;
+} 
