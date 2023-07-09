@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Bench Press",
+    "description": "Test",
+    "sets": 4,
+    "reps": 10
+  },
+  {
+    "name": "Shoulder-Press",
+    "description": "",
+    "sets": 4,
+    "reps": 10
+  },
+  {
+    "name": "Bar Curls",
+    "description": "test",
+    "sets": 4,
+    "reps": 10
+  }
+]

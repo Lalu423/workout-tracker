@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- workout.handlebars -->
 
 {{> header}}
@@ -14,3 +15,112 @@
 </section>
 
 {{> footer}}
+=======
+<h1>Workout</h1>
+
+<ul class="workout-card">
+    <li class="exercise">Exercise:</li>
+    <li class="description">Description:</li>
+    <li class="sets">Sets:</li>
+    <input type="text" id="sets" >
+    <li class="reps">Reps:</li>
+    <input type="text" id="reps" >
+
+</ul>
+<div id="workout-card" data-userid="{{id}}">
+  <select id="dropdown"></select>
+  {{!-- <select id="ddSets" name="sets"></select>
+  <select id="ddReps" name="reps"> </select> --}}
+
+  <button id="saveButton">Save Selection</button>
+  <div id="descriptionContainer"></div>
+  <div id="savedDataContainer"></div>
+</div>
+
+<h1>Workout Data</h1>
+
+{{!-- <ul>
+  {{#each workout}}
+  <li>
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+  </li>
+  {{/each}}
+</ul> --}}
+
+<h1>Workout</h1>
+
+<style>
+  /* Workout Planner */
+  .planner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .day {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .day h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .exercise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .exercise-list li {
+    margin-bottom: 5px;
+  }
+</style>
+
+<div id="workout-card">
+  <select id="day-dropdown">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+    <option value="Sunday">Sunday</option>
+  </select>
+  <button id="add-button">Add Exercise</button>
+</div>
+
+
+<ul id="workout-list"></ul>
+<div id="planner-template"></div>
+<div id="planner-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+<script src="/js/workout.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<select id="exerciseDropdown"></select>-->
+
+<!--
+{{#each results as | workout | }}
+{{ name }}
+{{/each}}
+-->
+{{!-- <script src="/js/workout.js"></script> --}}
+<!--<script src="/workout-tracker/utils/workout-api.js"></script>-->
+>>>>>>> cd1d17bf1ac154f3c12a00f5d7ed57d58b0a1b36
