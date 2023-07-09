@@ -51,10 +51,11 @@ nav {
 
 h1 {
   font-size: 3em;
+  padding: 1em 0;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 main {
@@ -68,6 +69,8 @@ main {
 }
 
 #loginForms,
+.workout-section,
+#workout-card,
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -79,8 +82,13 @@ main {
   margin: 4em 0;
 }
 
+. .workout-section {
+  width: 50%;
+}
+
 #loginContainer,
-#signUpContainer {
+#signUpContainer
+.workout-card {
   display: flex;
   flex-direction: column;
   font-size: 1.5em;
@@ -116,6 +124,9 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  nav {
+    font-size: 0.8em;
+  }
   h1 {
     font-size: 2em;
   }
