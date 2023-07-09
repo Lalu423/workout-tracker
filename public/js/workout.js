@@ -16,14 +16,6 @@ const workout = async function workoutData() {
       data
     )
 
-    const response2 = await fetch("https://wger.de/api/v2/exerciseimage", {
-      method: "GET",
-      headers: { Authorization: "Token 56c76d8178d0eee843d444734daf71278e39d1ab" }
-    });
-
-    const data2 = await response2.json();
-
-    console.log("workout image", data2)
 
     const dropdown = document.getElementById('dropdown');
     // const ddSets = document.getElementById('ddSets');
