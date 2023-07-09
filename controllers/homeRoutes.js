@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 
         res.render('homepage', {
 
-         workouts, 
+            workouts,
             logged_in: req.session.logged_in
 
         });
@@ -64,8 +64,8 @@ router.get('/login', (req, res) => {
 //     }
 // });
 
-router.post('/create-workout', (req,res) => {
-    
+router.post('/create-workout', (req, res) => {
+
 })
 
 router.get('/login', (req, res) => {
@@ -78,32 +78,58 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/profile', async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
     console.log("ghuilhuiltguylrftydr123");
-    const workoutData = await Workout.findAll({
-    where:{user_id:req.session.user_id}
-    });
+    try {
 
-     const workout = workoutData.map((exercise) => exercise.get({ plain: true }));
-     console.log("workout", workout);
-    res.render('profile', {workout, username:req.session.username,             logged_in: req.session.logged_in
-    });
+        const workoutData = await Workout.findAll({
+            where: { user_id: req.session.user_id }
+        });
+
+        const workout = workoutData.map((exercise) => exercise.get({ plain: true }));
+        console.log("workout", workout);
+        res.render('profile', {
+            workout, username: req.session.username, logged_in: req.session.logged_in
+        });
+
+
+    } catch (err) {
+        res.json(err)
+    }
+
 
 
 });
+
+router.get('/workout/delete/:id', async (req, res) => {
+
+
+    try {
+        const result = await Workout.destroy({
+            where: { id: req.params.id }
+        })
+
+        res.redirect('/profile')
+
+    } catch (err) {
+        res.json(err)
+
+    }
+
+})
 
 
 
 
 router.get('/workout-page', async (req, res) => {
 
-  try {
-    // const workoutData = await workout();
-    res.render('workout', { logged_in: req.session.logged_in});
-  } catch (error) {
-    console.error(error);
-    res.status(400).json({ error: 'Failed to fetch workout data' });
-  }
+    try {
+        // const workoutData = await workout();
+        res.render('workout', { logged_in: req.session.logged_in });
+    } catch (error) {
+        console.error(error);
+        res.status(400).json({ error: 'Failed to fetch workout data' });
+    }
 
 
     // try {
