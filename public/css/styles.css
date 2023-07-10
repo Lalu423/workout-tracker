@@ -55,7 +55,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 main {
@@ -82,12 +82,16 @@ main {
   margin: 4em 0;
 }
 
-. .workout-section {
+.workout-section {
   width: 50%;
 }
 
-#loginContainer,
-#signUpContainer
+.wrapper {
+  width: 70%;
+}
+
+  #loginContainer,
+#signUpContainer,
 .workout-card {
   display: flex;
   flex-direction: column;
@@ -123,9 +127,29 @@ button {
   align-self: center;
 }
 
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.workout-container,
+.workout-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#deleteBtn {
+  border: 1px solid rgb(221, 122,122);
+  background-color: rgb(221, 122,122);
+  padding: 0.25em;
+  border-radius: 0.25em;
+}
+
 @media screen and (max-width: 767px) {
   nav {
-    font-size: 0.8em;
+    font-size: 0.;
   }
   h1 {
     font-size: 2em;

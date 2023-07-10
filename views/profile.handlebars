@@ -31,20 +31,25 @@
 
   <div class="col-md-6 project-list">
     {{#if workout}}
-    <h3>Current Projects:</h3>
+    <h3>Workouts in progress:</h3>
 
     {{#each workout }}
-    <div class="row mb-2 ">
-      <div class="col-md-8">
+      <div class="col-md- workout-container">
         {{!-- <h4><a href="/workout/{{workout.id}}">{{workout.name}}</a></h4> --}}
-        <h4>{{name}}</h4>
-        <p>{{{description}}}</p>
-        <p>
-          <strong>Sets: </strong> {{sets}}
-          <strong>Reps: </strong> {{reps}}
-          <a href="/workout/delete/{{id}}">Delete</a>
+        <div class="workout-title"><h4>{{name}}</h4></div>
+        <div class="workout-detail"><p>{{{description}}}</p>
 
-        </p>
+        <div>
+
+        <p><strong>Sets: </strong> {{sets}}</p>
+
+        </p><strong>Reps: </strong> {{reps}}</p>
+        </div>
+        <div class="delBtn">
+          <a id="deleteBtn" href="/workout/delete/{{id}}">
+          Delete
+          </a>
+        </div>
 
       </div>
       {{!-- <div class="col-md-4">
